@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chambres & Suites | Aylimas Beach & Resort</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-logo">Aylimas <span>Beach & resort</span></div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Aylimas <span>Beach & resort</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="rooms.html" class="nav-link active">Chambres</a></li>
+                <li><a href="amenities.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="rooms.html#book" class="btn-book">Réserver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=1920&q=80');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Hébergements</p>
+            <h1 class="hero-title">Chambres & Suites</h1>
+            <p class="hero-description">Choisissez votre retraite parfaite parmi notre collection de chambres et suites magnifiquement conçues.</p>
+        </div>
+    </section>
+
+    <div class="rooms-filter" id="rooms">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Toutes les Chambres</button>
+                <button class="filter-btn" data-filter="standard">Standard</button>
+                <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+                <button class="filter-btn" data-filter="suite">Suites</button>
+                <button class="filter-btn" data-filter="villa">Villas</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="rooms-full">
+        <div class="container">
+            <div class="rooms-grid">
+                <div class="room-card" data-category="standard" data-tilt>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&q=80" alt="Chambre Standard">
+                        <span class="room-price">180€<span>/nuit</span></span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Chambre Standard</h3>
+                        <p class="room-size">35m² | Vue Jardin | Max 2 Voyageurs</p>
+                        <p>Chambre confortable avec équipements modernes, parfaite pour les couples ou voyageurs solos recherchant un hébergement de qualité à bon prix.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Lit Queen</li>
+                            <li><i class="fas fa-wifi"></i> WiFi Gratuit</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                            <li><i class="fas fa-snowflake"></i> Climatisation</li>
+                            <li><i class="fas fa-shower"></i> Douche Cascade</li>
+                            <li><i class="fas fa-coffee"></i> Machine à Café</li>
+                        </ul>
+                        <div class="room-actions">
+                            <a href="#book" class="btn btn-primary">Réserver</a>
+                            <button class="btn btn-secondary room-details-btn" data-room="standard">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-category="deluxe" data-tilt>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Chambre Deluxe Océan">
+                        <span class="room-price">250€<span>/nuit</span></span>
+                        <span class="room-badge">Meilleur Prix</span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Chambre Deluxe Océan</h3>
+                        <p class="room-size">45m² | Vue Mer | Max 2 Voyageurs</p>
+                        <p>Réveillez-vous avec une vue imprenable sur l'océan dans cette chambre élégante avec balcon privé.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Lit King Size</li>
+                            <li><i class="fas fa-wifi"></i> WiFi Gratuit</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                            <li><i class="fas fa-snowflake"></i> Climatisation</li>
+                            <li><i class="fas fa-shower"></i> Douche Cascade</li>
+                            <li><i class="fas fa-door-open"></i> Balcon</li>
+                        </ul>
+                        <div class="room-actions">
+                            <a href="#book" class="btn btn-primary">Réserver</a>
+                            <button class="btn btn-secondary room-details-btn" data-room="deluxe">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-category="deluxe" data-tilt>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1602002418816-5c0ae9dea8ba?w=600&q=80" alt="Deluxe Accès Plage">
+                        <span class="room-price">320€<span>/nuit</span></span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Deluxe Accès Plage</h3>
+                        <p class="room-size">50m² | Bord de Mer | Max 3 Voyageurs</p>
+                        <p>Sortez directement sur le sable depuis votre chambre. Profitez d'un accès direct à la plage.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Lit King Size</li>
+                            <li><i class="fas fa-wifi"></i> WiFi Gratuit</li>
+                            <li><i class="fas fa-umbrella-beach"></i> Accès Plage</li>
+                            <li><i class="fas fa-bath"></i> Baignoire</li>
+                            <li><i class="fas fa-tree"></i> Terrasse</li>
+                            <li><i class="fas fa-concierge-bell"></i> Service Chambre</li>
+                        </ul>
+                        <div class="room-actions">
+                            <a href="#book" class="btn btn-primary">Réserver</a>
+                            <button class="btn btn-secondary room-details-btn" data-room="deluxe-beach">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card featured" data-category="suite" data-tilt>
+                    <div class="room-badge" style="position:absolute;top:20px;left:20px;background:var(--secondary);color:var(--dark);padding:8px 20px;border-radius:20px;font-size:13px;font-weight:600;z-index:10;">Plus Populaire</div>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Suite Plage">
+                        <span class="room-price">450€<span>/nuit</span></span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Suite Plage</h3>
+                        <p class="room-size">85m² | Bord de Mer | Max 3 Voyageurs</p>
+                        <p>Suite spacieuse avec salon séparé, chambre principale et accès direct à la plage.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Lit King Size</li>
+                            <li><i class="fas fa-couch"></i> Salon</li>
+                            <li><i class="fas fa-umbrella-beach"></i> Accès Plage</li>
+                            <li><i class="fas fa-hot-tub"></i> Jacuzzi</li>
+                            <li><i class="fas fa-tree"></i> Grande Terrasse</li>
+                            <li><i class="fas fa-user-tie"></i> Service Majordome</li>
+                        </ul>
+                        <div class="room-actions">
+                            <a href="#book" class="btn btn-primary">Réserver</a>
+                            <button class="btn btn-secondary room-details-btn" data-room="suite">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-category="suite" data-tilt>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" alt="Suite Familiale">
+                        <span class="room-price">550€<span>/nuit</span></span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Suite Familiale</h3>
+                        <p class="room-size">100m² | Vue Jardin | Max 4 Voyageurs</p>
+                        <p>Parfaite pour les familles avec deux chambres, salon spacieux et équipements adaptés aux enfants.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 2 Chambres</li>
+                            <li><i class="fas fa-couch"></i> Salon</li>
+                            <li><i class="fas fa-utensils"></i> Kitchenette</li>
+                            <li><i class="fas fa-bath"></i> 2 Salles de Bain</li>
+                            <li><i class="fas fa-child"></i> Coin Enfants</li>
+                            <li><i class="fas fa-wifi"></i> WiFi Gratuit</li>
+                        </ul>
+                        <div class="room-actions">
+                            <a href="#book" class="btn btn-primary">Réserver</a>
+                            <button class="btn btn-secondary room-details-btn" data-room="family">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-category="villa" data-tilt>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1540544660406-8735e5fbb3bd?w=600&q=80" alt="Villa Plage">
+                        <span class="room-price">750€<span>/nuit</span></span>
+                        <span class="room-badge">Premium</span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Villa Plage</h3>
+                        <p class="room-size">150m² | Bord de Mer | Max 4 Voyageurs</p>
+                        <p>Le luxe ultime avec piscine privée, service de majordome et jardin isolé. Votre paradis privé.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 2 Chambres</li>
+                            <li><i class="fas fa-swimming-pool"></i> Piscine Privée</li>
+                            <li><i class="fas fa-umbrella-beach"></i> Plage Privée</li>
+                            <li><i class="fas fa-user-tie"></i> Majordome Dévoué</li>
+                            <li><i class="fas fa-tree"></i> Jardin Privé</li>
+                            <li><i class="fas fa-utensils"></i> Chef Privé</li>
+                        </ul>
+                        <div class="room-actions">
+                            <a href="#book" class="btn btn-primary">Réserver</a>
+                            <button class="btn btn-secondary room-details-btn" data-room="villa">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card" data-category="villa" data-tilt>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80" alt="Villa Royale">
+                        <span class="room-price">1200€<span>/nuit</span></span>
+                        <span class="room-badge">Exclusif</span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Villa Royale</h3>
+                        <p class="room-size">250m² | Bord de Mer | Max 6 Voyageurs</p>
+                        <p>Le summum du luxe. Trois chambres, piscine infinity privée, salle de cinéma et service inégalé.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 3 Chambres</li>
+                            <li><i class="fas fa-swimming-pool"></i> Piscine Infinity</li>
+                            <li><i class="fas fa-film"></i> Salle de Cinéma</li>
+                            <li><i class="fas fa-dumbbell"></i> Salle de Sport Privée</li>
+                            <li><i class="fas fa-helicopter"></i> Accès Héliport</li>
+                            <li><i class="fas fa-utensils"></i> Chef Personnel</li>
+                        </ul>
+                        <div class="room-actions">
+                            <a href="#book" class="btn btn-primary">Réserver</a>
+                            <button class="btn btn-secondary room-details-btn" data-room="royal">Voir Détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section" id="book">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <p class="section-subtitle">Réservations</p>
+                    <h2 class="section-title">Réservez Votre Séjour</h2>
+                    <p>Prêt à vivre le paradis? Remplissez le formulaire et notre équipe vous répondra sous 2 heures.</p>
+                    <div class="booking-contact">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">
+                                <h4>Appelez-nous</h4>
+                                <p>+66 75 123 456</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>reservations@aylimasbeach.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-text">
+                                <h4>Disponible</h4>
+                                <p>24h/24 - Toujours Disponible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form-full">
+                    <form id="bookingFormFull">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Prénom *</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nom *</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Téléphone *</label>
+                                <input type="tel" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Arrivée *</label>
+                                <input type="date" id="checkIn" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Départ *</label>
+                                <input type="date" id="checkOut" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nombre de Voyageurs *</label>
+                                <select required>
+                                    <option value="">Sélectionner</option>
+                                    <option value="1">1 Voyageur</option>
+                                    <option value="2">2 Voyageurs</option>
+                                    <option value="3">3 Voyageurs</option>
+                                    <option value="4">4 Voyageurs</option>
+                                    <option value="5">5 Voyageurs</option>
+                                    <option value="6">6 Voyageurs</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Type de Chambre *</label>
+                                <select required>
+                                    <option value="">Sélectionner</option>
+                                    <option value="standard">Chambre Standard - 180€</option>
+                                    <option value="deluxe">Chambre Deluxe Océan - 250€</option>
+                                    <option value="deluxe-beach">Deluxe Accès Plage - 320€</option>
+                                    <option value="suite">Suite Plage - 450€</option>
+                                    <option value="family">Suite Familiale - 550€</option>
+                                    <option value="villa">Villa Plage - 750€</option>
+                                    <option value="royal">Villa Royale - 1200€</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Demandes Spéciales</label>
+                            <textarea rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Vérifier Disponibilité & Réserver</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="room-modal" id="roomModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Room">
+                <div class="modal-info">
+                    <h3 id="modalTitle">Nom de la Chambre</h3>
+                    <p id="modalDesc">Description</p>
+                    <ul class="modal-features" id="modalFeatures"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">Aylimas <span>Beach</span></a>
+                    <p class="footer-text">Votre évasion au paradis sur des côtes préservées. Découvrez le mélange parfait entre beauté naturelle et confort luxueux à Aylimas Beach & Resort.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="rooms.html">Chambres & Suites</a></li>
+                        <li><a href="amenities.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="amenities.html">Spa & Bien-être</a></li>
+                        <li><a href="amenities.html">Sports Aquatiques</a></li>
+                        <li><a href="amenities.html">Restauration</a></li>
+                        <li><a href="amenities.html">Événements</a></li>
+                        <li><a href="contact.html">Service Navette</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informations Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Paradise Lane, Krabi Beach, Thaïlande 81000</li>
+                        <li><i class="fas fa-phone"></i> +66 75 123 456</li>
+                        <li><i class="fas fa-envelope"></i> reservations@aylimasbeach.com</li>
+                        <li><i class="fas fa-clock"></i> Réception 24h/24</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aylimas Beach & Resort. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">Conditions Générales</a>
+                    <a href="#">Politique des Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

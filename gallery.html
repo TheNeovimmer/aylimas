@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie | Aylimas Beach & Resort</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-logo">Aylimas <span>Beach & resort</span></div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Aylimas <span>Beach & resort</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="rooms.html" class="nav-link">Chambres</a></li>
+                <li><a href="amenities.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="rooms.html#book" class="btn-book">Réserver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&q=80');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Galerie</p>
+            <h1 class="hero-title">Moments au Paradis</h1>
+            <p class="hero-description">Explorez notre galerie et découvrez la beauté et l'élégance d'Aylimas Beach & Resort.</p>
+        </div>
+    </section>
+
+    <div class="gallery-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="rooms">Chambres</button>
+                <button class="filter-btn" data-filter="pool">Piscine & Plage</button>
+                <button class="filter-btn" data-filter="dining">Restauration</button>
+                <button class="filter-btn" data-filter="spa">Spa</button>
+                <button class="filter-btn" data-filter="activities">Activités</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="gallery-full">
+        <div class="container">
+            <div class="gallery-masonry">
+                <div class="gallery-item large" data-category="pool" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80" alt="Piscine Infinity">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="rooms" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80" alt="Chambre Deluxe">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="dining" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Restaurant">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="spa" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6d2a12181?w=800&q=80" alt="Spa">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="activities" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80" alt="Sports Nautiques">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item large" data-category="pool" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80" alt="Plage">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="rooms" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="Chambre avec Vue">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="dining" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Restaurant Intérieur">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="spa" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800&q=80" alt="Soin Spa">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="activities" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Vue Aérienne">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="pool" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1560193748-fdf895b7e7c5?w=800&q=80" alt="Coucher de Soleil Piscine">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="rooms" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Villa">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item large" data-category="dining" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80" alt="Bar Plage">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="activities" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80" alt="Yoga Plage">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="spa" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6d2a12181?w=800&q=80" alt="Spa">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-category="pool" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80" alt="Coucher de Soleil">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="#" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <section class="video-section">
+        <div class="container">
+            <p class="section-subtitle">Vidéo</p>
+            <h2 class="section-title">Découvrez Aylimas en Vidéo</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                    <p>Regardez la Vidéo du Resort</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <p class="section-subtitle">Témoignages</p>
+            <h2 class="section-title">Ce Que Disent Nos Voyageurs</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Les photos ne rendent pas justice à la beauté de cet endroit. Un paradis sur terre!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Garcia">
+                        <div>
+                            <h4>Maria & Carlos Garcia</h4>
+                            <span>Madrid, Espagne</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Un service impeccable, des installations magnifiques. Nous reviendons chaque année!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Wilson">
+                        <div>
+                            <h4>James & Sophie Wilson</h4>
+                            <span>Londres, Royaume-Uni</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Le paradis pour les enfants aussi! Le club enfants et les activités en famille étaient extraordinaires."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Lisa Thompson">
+                        <div>
+                            <h4>Famille Thompson</h4>
+                            <span>Toronto, Canada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="t-dot active" data-testimonial="0"></span>
+                <span class="t-dot" data-testimonial="1"></span>
+                <span class="t-dot" data-testimonial="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt pour le Paradis?</h2>
+                <p>Réservez votre séjour à Aylimas Beach & Resort et vivez les vacances d'une vie</p>
+                <a href="rooms.html#book" class="btn btn-primary btn-large">Réserver Maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">Aylimas <span>Beach</span></a>
+                    <p class="footer-text">Votre évasion au paradis sur des côtes préservées. Découvrez le mélange parfait entre beauté naturelle et confort luxueux à Aylimas Beach & Resort.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="rooms.html">Chambres & Suites</a></li>
+                        <li><a href="amenities.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="amenities.html">Spa & Bien-être</a></li>
+                        <li><a href="amenities.html">Sports Aquatiques</a></li>
+                        <li><a href="amenities.html">Restauration</a></li>
+                        <li><a href="amenities.html">Événements</a></li>
+                        <li><a href="contact.html">Service Navette</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informations Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Paradise Lane, Krabi Beach, Thaïlande 81000</li>
+                        <li><i class="fas fa-phone"></i> +66 75 123 456</li>
+                        <li><i class="fas fa-envelope"></i> reservations@aylimasbeach.com</li>
+                        <li><i class="fas fa-clock"></i> Réception 24h/24</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aylimas Beach & Resort. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">Conditions Générales</a>
+                    <a href="#">Politique des Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

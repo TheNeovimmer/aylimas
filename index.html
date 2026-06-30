@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aylimas Beach & Resort</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-logo">Aylimas <span>Beach & resort</span></div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Aylimas <span>Beach & resort</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="rooms.html" class="nav-link">Chambres</a></li>
+                <li><a href="amenities.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="rooms.html#book" class="btn-book">Réserver</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1920&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&q=80');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-3d-layer">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="floating-particles">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="sun-glow"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Bienvenue au Paradis</p>
+            <h1 class="hero-title">Aylimas Beach<br>& Resort</h1>
+            <p class="hero-description">Découvrez le paradis ultime où les eaux cristallines rencontrent les plages de sable blanc. Votre voyage vers la sérénité commence ici.</p>
+            <div class="hero-buttons">
+                <a href="rooms.html#book" class="btn btn-primary">Réserver Votre Séjour</a>
+                <a href="#about" class="btn btn-outline">Découvrir Plus</a>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-bar reveal">
+        <div class="container">
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="checkIn"><i class="fas fa-calendar-check"></i> Arrivée</label>
+                    <input type="date" id="checkIn" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOut"><i class="fas fa-calendar-times"></i> Départ</label>
+                    <input type="date" id="checkOut" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests"><i class="fas fa-user"></i> Voyageurs</label>
+                    <select id="guests">
+                        <option value="1">1 Voyageur</option>
+                        <option value="2" selected>2 Voyageurs</option>
+                        <option value="3">3 Voyageurs</option>
+                        <option value="4">4 Voyageurs</option>
+                        <option value="5">5 Voyageurs</option>
+                        <option value="6">6+ Voyageurs</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="roomType"><i class="fas fa-bed"></i> Type de Chambre</label>
+                    <select id="roomType">
+                        <option value="standard">Chambre Standard</option>
+                        <option value="deluxe">Chambre Deluxe</option>
+                        <option value="suite">Suite Plage</option>
+                        <option value="villa">Villa Privée</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-book-form">Vérifier Disponibilité</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about reveal" id="about">
+        <div class="container about-container">
+            <div class="about-visual">
+                <div class="about-image-container">
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80" alt="Aylimas Beach Resort Overview" class="about-main-image">
+                    <div class="about-image-overlay">
+                        <div class="about-stats-overlay">
+                            <div class="stat-overlay">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Années</span>
+                            </div>
+                            <div class="stat-overlay">
+                                <span class="stat-number">5★</span>
+                                <span class="stat-label">Excellent</span>
+                            </div>
+                            <div class="stat-overlay">
+                                <span class="stat-number">120</span>
+                                <span class="stat-label">Chambres</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="section-subtitle">À Propos de Nous</p>
+                <h2 class="section-title">Votre Paradis Beach Depuis 2005</h2>
+                <p class="about-text">Niché le long des côtes préservées, Aylimas Beach & Resort offre une évasion exclusive de l'ordinaire. Depuis près de deux décennies, nous créons des souvenirs inoubliables pour les voyageurs exigeants à la recherche du mélange parfait entre beauté naturelle et confort luxueux.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <h4>Plage Privée</h4>
+                        <p>500m de côte préservée</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-swimming-pool"></i>
+                        <h4>Piscine Infinity</h4>
+                        <p>Piscine à débordement vue mer</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-spa"></i>
+                        <h4>Spa Wellness</h4>
+                        <p>Soins traditionnels et modernes</p>
+                    </div>
+                </div>
+                <a href="amenities.html" class="btn btn-primary">Explorer le Resort</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats reveal">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <span class="stat-number" data-count="20">0</span>
+                    <span class="stat-label">Années d'Excellence</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <span class="stat-number" data-count="45">0</span>
+                    <span class="stat-label">Prix Gagnés</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <span class="stat-number" data-count="50000">0</span>
+                    <span class="stat-label">Voyageurs Satisfaits</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-bed"></i></div>
+                    <span class="stat-number" data-count="120">0</span>
+                    <span class="stat-label">Chambres Luxueuses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms-preview reveal" id="rooms">
+        <div class="container">
+            <p class="section-subtitle">Hébergements</p>
+            <h2 class="section-title">Séjours de Rêve en Bord de Mer</h2>
+            <div class="rooms-grid">
+                <div class="room-card" data-tilt>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600&q=80" alt="Chambre Deluxe">
+                        <span class="room-price">250€<span>/nuit</span></span>
+                        <span class="room-badge">Vue Mer</span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Chambre Deluxe Océan</h3>
+                        <p>Réveillez-vous avec une vue imprenable sur l'océan dans cette chambre élégamment meublée avec balcon privé.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Lit King Size</li>
+                            <li><i class="fas fa-wifi"></i> WiFi Gratuit</li>
+                            <li><i class="fas fa-bath"></i> Douche Cascade</li>
+                            <li><i class="fas fa-expand"></i> 45m²</li>
+                        </ul>
+                        <a href="rooms.html" class="btn btn-secondary">Voir Détails</a>
+                    </div>
+                </div>
+                <div class="room-card featured" data-tilt>
+                    <div class="room-badge" style="position:absolute;top:20px;left:20px;background:var(--secondary);color:var(--dark);padding:8px 20px;border-radius:20px;font-size:13px;font-weight:600;z-index:10;">Plus Populaire</div>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80" alt="Suite Plage">
+                        <span class="room-price">450€<span>/nuit</span></span>
+                        <span class="room-badge">Accès Plage</span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Suite Plage</h3>
+                        <p>Suite spacieuse avec salon séparé et accès direct à la plage.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> Lit King Size</li>
+                            <li><i class="fas fa-door-open"></i> Accès Plage</li>
+                            <li><i class="fas fa-bath"></i> Jacuzzi</li>
+                            <li><i class="fas fa-expand"></i> 85m²</li>
+                        </ul>
+                        <a href="rooms.html" class="btn btn-primary">Voir Détails</a>
+                    </div>
+                </div>
+                <div class="room-card" data-tilt>
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Villa Plage">
+                        <span class="room-price">750€<span>/nuit</span></span>
+                        <span class="room-badge">Piscine Privée</span>
+                    </div>
+                    <div class="room-details">
+                        <h3>Villa Plage</h3>
+                        <p>Lux ultime avec piscine privée, service de majordome et jardin isolé.</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 2 Chambres</li>
+                            <li><i class="fas fa-swimming-pool"></i> Piscine Privée</li>
+                            <li><i class="fas fa-user-tie"></i> Majordome</li>
+                            <li><i class="fas fa-expand"></i> 150m²</li>
+                        </ul>
+                        <a href="rooms.html" class="btn btn-secondary">Voir Détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="rooms.html" class="btn btn-outline">Voir Toutes les Chambres <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="amenities-preview reveal" id="amenities">
+        <div class="container">
+            <p class="section-subtitle">Expériences</p>
+            <h2 class="section-title">Moments Inoubliables</h2>
+            <div class="amenities-grid">
+                <div class="amenity-card" data-tilt>
+                    <div class="amenity-icon"><i class="fas fa-swimming-pool"></i></div>
+                    <h3>Piscine Infinity</h3>
+                    <p>Piscine sur le toit avec vues panoramiques sur l'océan et bar intégré</p>
+                    <span class="amenity-tag">Ouverte 24h/24</span>
+                </div>
+                <div class="amenity-card" data-tilt>
+                    <div class="amenity-icon"><i class="fas fa-water"></i></div>
+                    <h3>Sports Aquatiques</h3>
+                    <p>Kayak, plongée, jet ski et aventures de plongée</p>
+                    <span class="amenity-tag">Inclus</span>
+                </div>
+                <div class="amenity-card" data-tilt>
+                    <div class="amenity-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Spa Wellness</h3>
+                    <p>Spa primé avec massages thaïlandais et soins holistiques</p>
+                    <span class="amenity-tag">5 Étoiles</span>
+                </div>
+                <div class="amenity-card" data-tilt>
+                    <div class="amenity-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Restauration</h3>
+                    <p>Restaurant en bord de plage servant fruits de mer frais et cuisine internationale</p>
+                    <span class="amenity-tag">4 Salles</span>
+                </div>
+                <div class="amenity-card" data-tilt>
+                    <div class="amenity-icon"><i class="fas fa-glass-martini-alt"></i></div>
+                    <h3>Bar Plage</h3>
+                    <p>Cocktails au coucher du soleil avec musique live</p>
+                    <span class="amenity-tag">Happy Hour</span>
+                </div>
+                <div class="amenity-card" data-tilt>
+                    <div class="amenity-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Fitness</h3>
+                    <p>Salle de sport moderne, cours de yoga et boot camp plage</p>
+                    <span class="amenity-tag">Ouvert 24h/24</span>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="amenities.html" class="btn btn-outline">Voir Tous les Services <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience reveal">
+        <div class="container">
+            <div class="experience-content">
+                <p class="section-subtitle">Expérience Spéciale</p>
+                <h2 class="section-title">Dîner au Crépuscule sur la Plage</h2>
+                <p class="experience-text">Savourez une expérience magique les pieds dans le sable. Profitez d'un dîner privé sur la plage au coucher du soleil, créant des souvenirs qui dureront toute une vie.</p>
+                <ul class="experience-includes">
+                    <li><i class="fas fa-check"></i> Cadre plage privée</li>
+                    <li><i class="fas fa-check"></i> Dîner 5 services fruits de mer</li>
+                    <li><i class="fas fa-check"></i> Accord mets-vins premium</li>
+                    <li><i class="fas fa-check"></i> Décorations romantiques</li>
+                    <li><i class="fas fa-check"></i> Musique acoustique live</li>
+                </ul>
+                <div class="experience-price">
+                    <span class="price">199€</span>
+                    <span class="per">par couple</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary">Réserver l'Expérience</a>
+            </div>
+            <div class="experience-visual">
+                <div class="sunset-scene">
+                    <div class="sun"></div>
+                    <div class="ocean"></div>
+                    <div class="palm-silhouette"></div>
+                    <div class="candles">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-preview reveal" id="gallery">
+        <div class="container">
+            <p class="section-subtitle">Galerie</p>
+            <h2 class="section-title">Moments au Paradis</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Vue du Resort">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80" alt="Piscine">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80" alt="Plage">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80" alt="Chambre">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6d2a12181?w=800&q=80" alt="Spa">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Restaurant">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="gallery.html" class="btn btn-outline">Voir la Galerie Complète <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="#" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <section class="testimonials reveal">
+        <div class="container">
+            <p class="section-subtitle">Témoignages</p>
+            <h2 class="section-title">Ce Que Disent Nos Voyageurs</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Absolument magique! L'emplacement de la plage est stupéfiant et le personnel a tout fait pour rendre notre lune de miel inoubliable. Nous reviendrons!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emma Wilson">
+                        <div>
+                            <h4>Emma Wilson</h4>
+                            <span>Sydney, Australie</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"La Villa Plage était incroyable! Se réveiller avec un accès direct à la plage et avoir notre propre piscine a fait de ceci les parfaites vacances en famille."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="David Chen">
+                        <div>
+                            <h4>David Chen</h4>
+                            <span>Singapour</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Le dîner plage au coucher du soleil était le meilleur de notre voyage! Le cadre romantique parfait avec une nourriture amazing. Aylimas est vraiment le paradis trouvé."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sophie Martin">
+                        <div>
+                            <h4>Sophie Martin</h4>
+                            <span>Paris, France</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="t-dot active" data-testimonial="0"></span>
+                <span class="t-dot" data-testimonial="1"></span>
+                <span class="t-dot" data-testimonial="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta reveal">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt pour le Paradis?</h2>
+                <p>Réservez votre séjour à Aylimas Beach & Resort et vivez les vacances d'une vie</p>
+                <a href="rooms.html#book" class="btn btn-primary btn-large">Réserver Maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">Aylimas <span>Beach</span></a>
+                    <p class="footer-text">Votre évasion au paradis sur des côtes préservées. Découvrez le mélange parfait entre beauté naturelle et confort luxueux à Aylimas Beach & Resort.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="rooms.html">Chambres & Suites</a></li>
+                        <li><a href="amenities.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="amenities.html">Spa & Bien-être</a></li>
+                        <li><a href="amenities.html">Sports Aquatiques</a></li>
+                        <li><a href="amenities.html">Restauration</a></li>
+                        <li><a href="amenities.html">Événements</a></li>
+                        <li><a href="contact.html">Service Navette</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informations Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Paradise Lane, Krabi Beach, Thaïlande 81000</li>
+                        <li><i class="fas fa-phone"></i> +66 75 123 456</li>
+                        <li><i class="fas fa-envelope"></i> reservations@aylimasbeach.com</li>
+                        <li><i class="fas fa-clock"></i> Réception 24h/24</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aylimas Beach & Resort. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">Conditions Générales</a>
+                    <a href="#">Politique des Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
