@@ -2019,9 +2019,6 @@ img {
 }
 
 /* 3D Tilt Effect */
-[data-tilt] {
-    transition: transform 0.3s ease;
-}
 
 /* Offers Section */
 .offers-section {
